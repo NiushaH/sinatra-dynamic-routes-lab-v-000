@@ -27,7 +27,9 @@ class App < Sinatra::Base
     @word4 = params[:word4]
     @word5 = params[:word5]
     
+    array = "#{@word1}, #{@word2}, #{@word3}, #{@word4}, #{@word5}"
     
+    @string_words = array.join(" ") + "."
   end
 
   get '/:operation/:number1/:number2' do
