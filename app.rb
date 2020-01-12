@@ -43,7 +43,8 @@ class App < Sinatra::Base
 
     operation = sum || difference || product || quotient
 
-    @result = 
+    @result = operation.to_s
+    
   end
 
 end
