@@ -37,11 +37,13 @@ class App < Sinatra::Base
     number2 = params[:number2].to_i
     
     sum = number1+number2
-    difference = number2-number1
+    difference_A = number1-number2
+    difference_B = number2-number1
     product = number1*number2
-    quotient = number1/number2
+    quotient_A = number1/number2
+    quotient_B = number2/number1
 
-    operation = sum || difference || product || quotient
+    operation = sum || difference_A || difference_B || product || quotient_A || quotient_B
 
     @result = operation.to_s
     
