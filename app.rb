@@ -49,7 +49,7 @@ class App < Sinatra::Base
       when "add"
         sum.to_s
       when "multiply"
-        multiply.to_s
+        product.to_s
       when "divide"
         quotient.to_s
     end
