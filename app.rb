@@ -20,7 +20,7 @@ class App < Sinatra::Base
 
   end
 
-  get '/square/:number' do
+  get '/:operation/:number1/:number2' do
 
   end
 
