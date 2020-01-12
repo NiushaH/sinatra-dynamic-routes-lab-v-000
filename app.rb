@@ -51,7 +51,7 @@ class App < Sinatra::Base
     
     
 
-    sum = number1+number2
+    add = number1+number2
     difference_A = number1-number2
     difference_B = number2-number1
     product = number1*number2
