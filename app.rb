@@ -43,7 +43,7 @@ class App < Sinatra::Base
     quotient_A = number1/number2
     quotient_B = number2/number1
 
-    operation = sum || difference_A || difference_B || product || quotient_A || quotient_B
+    operation = sum || difference_B || difference_A || product || quotient_A || quotient_B
 
     @result = operation.to_s
     
