@@ -49,6 +49,15 @@ class App < Sinatra::Base
         (@number1 / @number2).to_s
     end
     
+    
+
+    sum = number1+number2
+    difference_A = number1-number2
+    difference_B = number2-number1
+    product = number1*number2
+    quotient_A = number1/number2
+    quotient_B = number2/number1
+    
   end
 
 end
