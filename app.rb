@@ -5,7 +5,7 @@ class App < Sinatra::Base
 
   get 'reversename/:name' do
     @name = params[:name].reverse
-    erb :'/reversename/name.html'
+    erb :'%2Freversename%2Fname.html'
   end
 
 end
