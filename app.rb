@@ -33,30 +33,20 @@ class App < Sinatra::Base
   end
 
   get '/:operation/:number1/:number2' do
+    @operation = params[:operation]
+    
     number1 = params[:number1].to_i
     number2 = params[:number2].to_i
     
-    sum = number1+number2
-    difference_A = number1-number2
-    difference_B = number2-number1
-    product = number1*number2
-    quotient_A = number1/number2
-    quotient_B = number2/number1
-
-    operation = sum || difference_B || difference_A || product || quotient_A || quotient_B
-
-    @result = operation.to_s
-    
-    
-        case @oper
+    case @operation
       when "subtract"
-        (@num1 - @num2).to_s
+        (@number1 - @number2).to_s
       when "add"
-        (@num1 + @num2).to_s
+        (@number1 + @number2).to_s
       when "multiply"
-        (@num1 * @num2).to_s
+        (@number1 * @number2).to_s
       when "divide"
-        (@num1 / @num2).to_s
+        (@number1 / @number2).to_s
     end
     
   end
